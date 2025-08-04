@@ -48,7 +48,7 @@ export default function Index() {
           </Badge>
           <h1 className="text-5xl md:text-6xl font-bold text-alumni-900 mb-6 leading-tight">
             Welcome to the
-            <span className="block bg-gradient-to-r from-alumni-600 to-alumni-800 bg-clip-text text-transparent">
+            <span className="block bg-gray-800 text-white px-4 py-2 rounded-lg">
               University of Calcutta Alumni Association
             </span>
           </h1>
