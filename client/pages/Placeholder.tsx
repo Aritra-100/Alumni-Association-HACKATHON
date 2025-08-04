@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { ArrowLeft, BookOpen, Construction } from "lucide-react";
 
 interface PlaceholderProps {
@@ -19,7 +25,9 @@ export default function Placeholder({ title, description }: PlaceholderProps) {
               <BookOpen className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-alumni-900">University Alumni</h1>
+              <h1 className="text-xl font-bold text-alumni-900">
+                University Alumni
+              </h1>
               <p className="text-xs text-alumni-600">Association Portal</p>
             </div>
           </Link>
@@ -38,18 +46,24 @@ export default function Placeholder({ title, description }: PlaceholderProps) {
             <div className="w-16 h-16 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <Construction className="w-8 h-8 text-gold-600" />
             </div>
-            <CardTitle className="text-2xl font-bold text-alumni-900">{title}</CardTitle>
+            <CardTitle className="text-2xl font-bold text-alumni-900">
+              {title}
+            </CardTitle>
             <CardDescription className="text-alumni-600">
               {description}
             </CardDescription>
           </CardHeader>
           <CardContent className="text-center space-y-4">
             <p className="text-alumni-600">
-              This page is coming soon. Please continue exploring other sections of the alumni portal.
+              This page is coming soon. Please continue exploring other sections
+              of the alumni portal.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link to="/">
-                <Button variant="outline" className="border-alumni-300 text-alumni-700 hover:bg-alumni-50">
+                <Button
+                  variant="outline"
+                  className="border-alumni-300 text-alumni-700 hover:bg-alumni-50"
+                >
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Back to Home
                 </Button>
