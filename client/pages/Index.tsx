@@ -8,7 +8,20 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Calendar, MapPin, Trophy, BookOpen, Heart, Brain, Zap, Target, MessageCircle, Sparkles, Bot } from "lucide-react";
+import {
+  Users,
+  Calendar,
+  MapPin,
+  Trophy,
+  BookOpen,
+  Heart,
+  Brain,
+  Zap,
+  Target,
+  MessageCircle,
+  Sparkles,
+  Bot,
+} from "lucide-react";
 
 export default function Index() {
   return (
