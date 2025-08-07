@@ -3,16 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Bot, 
-  MessageCircle, 
-  X, 
-  Send, 
+import {
+  Bot,
+  MessageCircle,
+  X,
+  Send,
   Sparkles,
   Users,
   Calendar,
   Briefcase,
-  BookOpen
+  BookOpen,
 } from "lucide-react";
 
 export default function AIAssistant() {
@@ -21,36 +21,61 @@ export default function AIAssistant() {
   const [messages, setMessages] = useState([
     {
       type: "assistant",
-      content: "Hello! I'm CU Assistant, your AI-powered alumni guide. I can help you find connections, discover opportunities, and navigate the Calcutta University alumni network. How can I assist you today?"
-    }
+      content:
+        "Hello! I'm CU Assistant, your AI-powered alumni guide. I can help you find connections, discover opportunities, and navigate the Calcutta University alumni network. How can I assist you today?",
+    },
   ]);
 
   const quickActions = [
-    { icon: Users, label: "Find Alumni", description: "Connect with graduates in your field" },
-    { icon: Calendar, label: "Events", description: "Discover relevant networking events" },
-    { icon: Briefcase, label: "Jobs", description: "Explore career opportunities" },
-    { icon: BookOpen, label: "Mentorship", description: "Find or become a mentor" }
+    {
+      icon: Users,
+      label: "Find Alumni",
+      description: "Connect with graduates in your field",
+    },
+    {
+      icon: Calendar,
+      label: "Events",
+      description: "Discover relevant networking events",
+    },
+    {
+      icon: Briefcase,
+      label: "Jobs",
+      description: "Explore career opportunities",
+    },
+    {
+      icon: BookOpen,
+      label: "Mentorship",
+      description: "Find or become a mentor",
+    },
   ];
 
   const handleSendMessage = () => {
     if (!message.trim()) return;
-    
-    setMessages(prev => [...prev, { type: "user", content: message }]);
+
+    setMessages((prev) => [...prev, { type: "user", content: message }]);
     setMessage("");
-    
+
     // Simulate AI response
     setTimeout(() => {
-      setMessages(prev => [...prev, {
-        type: "assistant",
-        content: "I understand you're looking for that. Let me search through our alumni network and find the best matches for you. This might take a moment..."
-      }]);
+      setMessages((prev) => [
+        ...prev,
+        {
+          type: "assistant",
+          content:
+            "I understand you're looking for that. Let me search through our alumni network and find the best matches for you. This might take a moment...",
+        },
+      ]);
     }, 1000);
   };
 
   const handleQuickAction = (action: string) => {
-    setMessages(prev => [...prev, 
+    setMessages((prev) => [
+      ...prev,
       { type: "user", content: `Help me with ${action}` },
-      { type: "assistant", content: `Great choice! I'm analyzing our database to find the best ${action.toLowerCase()} opportunities for you based on your profile and interests. Here's what I found...` }
+      {
+        type: "assistant",
+        content: `Great choice! I'm analyzing our database to find the best ${action.toLowerCase()} opportunities for you based on your profile and interests. Here's what I found...`,
+      },
     ]);
   };
 
@@ -84,7 +109,9 @@ export default function AIAssistant() {
                     <Bot className="w-5 h-5 text-alumni-900" />
                   </div>
                   <div>
-                    <CardTitle className="text-lg text-white">CU Assistant</CardTitle>
+                    <CardTitle className="text-lg text-white">
+                      CU Assistant
+                    </CardTitle>
                     <div className="flex items-center space-x-1">
                       <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span className="text-xs text-alumni-200">Online</span>
@@ -117,11 +144,13 @@ export default function AIAssistant() {
                     </div>
                   </div>
                 ))}
-                
+
                 {/* Quick Actions */}
                 {messages.length === 1 && (
                   <div className="space-y-3">
-                    <p className="text-sm text-gray-600 font-medium">Quick Actions:</p>
+                    <p className="text-sm text-gray-600 font-medium">
+                      Quick Actions:
+                    </p>
                     <div className="grid grid-cols-2 gap-2">
                       {quickActions.map((action, index) => (
                         <button
@@ -131,9 +160,13 @@ export default function AIAssistant() {
                         >
                           <div className="flex items-center space-x-2 mb-1">
                             <action.icon className="w-4 h-4 text-alumni-600" />
-                            <span className="text-sm font-medium text-alumni-900">{action.label}</span>
+                            <span className="text-sm font-medium text-alumni-900">
+                              {action.label}
+                            </span>
                           </div>
-                          <p className="text-xs text-gray-600">{action.description}</p>
+                          <p className="text-xs text-gray-600">
+                            {action.description}
+                          </p>
                         </button>
                       ))}
                     </div>

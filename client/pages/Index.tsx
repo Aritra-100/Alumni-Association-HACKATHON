@@ -8,7 +8,20 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Calendar, MapPin, Trophy, BookOpen, Heart, Brain, Zap, Target, MessageCircle, Sparkles, Bot } from "lucide-react";
+import {
+  Users,
+  Calendar,
+  MapPin,
+  Trophy,
+  BookOpen,
+  Heart,
+  Brain,
+  Zap,
+  Target,
+  MessageCircle,
+  Sparkles,
+  Bot,
+} from "lucide-react";
 import AIAssistant from "@/components/AIAssistant";
 
 export default function Index() {
@@ -216,7 +229,10 @@ export default function Index() {
       </section>
 
       {/* Agentic AI Section */}
-      <section id="ai" className="py-20 bg-gradient-to-r from-alumni-900 via-alumni-800 to-alumni-900 text-white relative overflow-hidden">
+      <section
+        id="ai"
+        className="py-20 bg-gradient-to-r from-alumni-900 via-alumni-800 to-alumni-900 text-white relative overflow-hidden"
+      >
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-20 h-20 bg-gold-400/20 rounded-full blur-xl"></div>
@@ -228,14 +244,17 @@ export default function Index() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-gold-400/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
               <Sparkles className="w-5 h-5 text-gold-300 mr-2" />
-              <span className="text-gold-200 font-medium">Powered by Agentic AI</span>
+              <span className="text-gold-200 font-medium">
+                Powered by Agentic AI
+              </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Intelligent Alumni Networking
             </h2>
             <p className="text-xl text-alumni-200 max-w-3xl mx-auto leading-relaxed">
-              Experience the future of alumni connections with our AI-powered platform that learns, adapts,
-              and proactively helps you build meaningful relationships and advance your career.
+              Experience the future of alumni connections with our AI-powered
+              platform that learns, adapts, and proactively helps you build
+              meaningful relationships and advance your career.
             </p>
           </div>
 
@@ -247,7 +266,9 @@ export default function Index() {
                 </div>
                 <CardTitle className="text-white">Smart Matching</CardTitle>
                 <CardDescription className="text-alumni-200">
-                  AI analyzes your profile, interests, and career goals to connect you with the most relevant alumni for networking and mentorship opportunities.
+                  AI analyzes your profile, interests, and career goals to
+                  connect you with the most relevant alumni for networking and
+                  mentorship opportunities.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -257,9 +278,13 @@ export default function Index() {
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center mb-4">
                   <Target className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="text-white">Career Intelligence</CardTitle>
+                <CardTitle className="text-white">
+                  Career Intelligence
+                </CardTitle>
                 <CardDescription className="text-alumni-200">
-                  Get personalized career recommendations, job opportunities, and skill development paths based on successful alumni in your field.
+                  Get personalized career recommendations, job opportunities,
+                  and skill development paths based on successful alumni in your
+                  field.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -271,7 +296,9 @@ export default function Index() {
                 </div>
                 <CardTitle className="text-white">Proactive Insights</CardTitle>
                 <CardDescription className="text-alumni-200">
-                  Receive intelligent notifications about networking opportunities, relevant events, and potential collaborations before you even know you need them.
+                  Receive intelligent notifications about networking
+                  opportunities, relevant events, and potential collaborations
+                  before you even know you need them.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -284,16 +311,25 @@ export default function Index() {
                   <div className="w-8 h-8 bg-gradient-to-br from-gold-400 to-gold-600 rounded-lg flex items-center justify-center mr-3">
                     <Bot className="w-5 h-5 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white">Meet CU Assistant</h3>
+                  <h3 className="text-2xl font-bold text-white">
+                    Meet CU Assistant
+                  </h3>
                 </div>
                 <p className="text-alumni-200 mb-6 leading-relaxed">
-                  Your personal AI-powered alumni guide that understands your goals, suggests connections,
-                  and helps you navigate the vast network of Calcutta University graduates worldwide.
+                  Your personal AI-powered alumni guide that understands your
+                  goals, suggests connections, and helps you navigate the vast
+                  network of Calcutta University graduates worldwide.
                 </p>
                 <div className="flex flex-wrap gap-3 mb-6">
-                  <span className="bg-blue-400/20 text-blue-200 px-3 py-1 rounded-full text-sm">Smart Recommendations</span>
-                  <span className="bg-purple-400/20 text-purple-200 px-3 py-1 rounded-full text-sm">Natural Language</span>
-                  <span className="bg-green-400/20 text-green-200 px-3 py-1 rounded-full text-sm">24/7 Available</span>
+                  <span className="bg-blue-400/20 text-blue-200 px-3 py-1 rounded-full text-sm">
+                    Smart Recommendations
+                  </span>
+                  <span className="bg-purple-400/20 text-purple-200 px-3 py-1 rounded-full text-sm">
+                    Natural Language
+                  </span>
+                  <span className="bg-green-400/20 text-green-200 px-3 py-1 rounded-full text-sm">
+                    24/7 Available
+                  </span>
                 </div>
                 <Button className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white border-0">
                   <MessageCircle className="w-4 h-4 mr-2" />
@@ -309,17 +345,22 @@ export default function Index() {
                       </div>
                       <div className="bg-white/20 rounded-lg p-3 flex-1">
                         <p className="text-white text-sm">
-                          "I found 3 alumni in your field who are currently hiring. Would you like me to facilitate an introduction?"
+                          "I found 3 alumni in your field who are currently
+                          hiring. Would you like me to facilitate an
+                          introduction?"
                         </p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-8 h-8 bg-alumni-600 rounded-full flex items-center justify-center flex-shrink-0">
-                        <span className="text-white text-xs font-bold">You</span>
+                        <span className="text-white text-xs font-bold">
+                          You
+                        </span>
                       </div>
                       <div className="bg-alumni-600/80 rounded-lg p-3 flex-1">
                         <p className="text-white text-sm">
-                          "Yes, that would be great! Can you also suggest relevant networking events?"
+                          "Yes, that would be great! Can you also suggest
+                          relevant networking events?"
                         </p>
                       </div>
                     </div>
@@ -329,7 +370,8 @@ export default function Index() {
                       </div>
                       <div className="bg-white/20 rounded-lg p-3 flex-1">
                         <p className="text-white text-sm">
-                          "Absolutely! I've scheduled introductions and found 2 perfect events for next week..."
+                          "Absolutely! I've scheduled introductions and found 2
+                          perfect events for next week..."
                         </p>
                       </div>
                     </div>
