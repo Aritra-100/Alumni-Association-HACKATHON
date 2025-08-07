@@ -216,7 +216,7 @@ export default function Index() {
       </section>
 
       {/* Agentic AI Section */}
-      <section className="py-20 bg-gradient-to-r from-alumni-900 via-alumni-800 to-alumni-900 text-white relative overflow-hidden">
+      <section id="ai" className="py-20 bg-gradient-to-r from-alumni-900 via-alumni-800 to-alumni-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-20 h-20 bg-gold-400/20 rounded-full blur-xl"></div>
