@@ -53,6 +53,13 @@ export default function Index() {
             >
               Careers
             </a>
+            <a
+              href="#ai"
+              className="text-alumni-700 hover:text-alumni-900 transition-colors flex items-center space-x-1"
+            >
+              <Bot className="w-4 h-4" />
+              <span>AI Features</span>
+            </a>
             <Link to="/login">
               <Button className="bg-alumni-600 hover:bg-alumni-700 text-white">
                 Alumni Login
