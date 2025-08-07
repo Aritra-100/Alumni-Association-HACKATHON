@@ -13,6 +13,7 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { BookOpen, ArrowLeft, Eye, EyeOff, Mail, Lock } from "lucide-react";
+import AIAssistant from "@/components/AIAssistant";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
