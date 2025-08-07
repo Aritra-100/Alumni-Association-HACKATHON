@@ -344,7 +344,7 @@ export default function Index() {
       {/* Stats Section */}
       <section className="bg-alumni-900 text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
+          <div className="grid md:grid-cols-5 gap-8 text-center">
             <div>
               <h3 className="text-4xl font-bold text-gold-400 mb-2">50K+</h3>
               <p className="text-alumni-200">Active Alumni</p>
@@ -360,6 +360,13 @@ export default function Index() {
             <div>
               <h3 className="text-4xl font-bold text-gold-400 mb-2">$2M+</h3>
               <p className="text-alumni-200">Scholarships Awarded</p>
+            </div>
+            <div>
+              <div className="flex items-center justify-center mb-2">
+                <Brain className="w-6 h-6 text-gold-400 mr-2" />
+                <h3 className="text-4xl font-bold text-gold-400">15K+</h3>
+              </div>
+              <p className="text-alumni-200">AI-Powered Connections</p>
             </div>
           </div>
         </div>
