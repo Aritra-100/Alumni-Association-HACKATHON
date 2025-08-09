@@ -42,12 +42,12 @@ export default function Index() {
             </div>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="text-alumni-700 hover:text-alumni-900 transition-colors"
             >
               About
-            </a>
+            </Link>
             <a
               href="#events"
               className="text-alumni-700 hover:text-alumni-900 transition-colors"
