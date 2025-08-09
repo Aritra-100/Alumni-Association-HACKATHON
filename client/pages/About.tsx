@@ -120,17 +120,21 @@ export default function About() {
             </p>
             <p className="text-lg text-alumni-700 mb-8 leading-relaxed">
               Our alumni association continues this tradition by maintaining the
-              bonds formed during university years and creating new opportunities
-              for collaboration, mentorship, and mutual support among our global
-              community of graduates.
+              bonds formed during university years and creating new
+              opportunities for collaboration, mentorship, and mutual support
+              among our global community of graduates.
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center">
-                <h3 className="text-3xl font-bold text-alumni-600 mb-2">165+</h3>
+                <h3 className="text-3xl font-bold text-alumni-600 mb-2">
+                  165+
+                </h3>
                 <p className="text-alumni-700">Years of Legacy</p>
               </div>
               <div className="text-center">
-                <h3 className="text-3xl font-bold text-alumni-600 mb-2">50K+</h3>
+                <h3 className="text-3xl font-bold text-alumni-600 mb-2">
+                  50K+
+                </h3>
                 <p className="text-alumni-700">Global Alumni</p>
               </div>
             </div>
@@ -176,7 +180,7 @@ export default function About() {
               maintaining the proud traditions of the University of Calcutta
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white">
               <CardHeader>
@@ -215,10 +219,10 @@ export default function About() {
                 </div>
                 <CardTitle className="text-white">Our Values</CardTitle>
                 <CardDescription className="text-alumni-200">
-                  Excellence, integrity, inclusivity, and service to society.
-                  We believe in the power of education to transform lives and
-                  the responsibility of alumni to create opportunities for
-                  future generations.
+                  Excellence, integrity, inclusivity, and service to society. We
+                  believe in the power of education to transform lives and the
+                  responsibility of alumni to create opportunities for future
+                  generations.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -399,17 +403,26 @@ export default function About() {
               <h4 className="font-semibold mb-4">About</h4>
               <ul className="space-y-2 text-alumni-300">
                 <li>
-                  <a href="#history" className="hover:text-white transition-colors">
+                  <a
+                    href="#history"
+                    className="hover:text-white transition-colors"
+                  >
                     Our History
                   </a>
                 </li>
                 <li>
-                  <a href="#mission" className="hover:text-white transition-colors">
+                  <a
+                    href="#mission"
+                    className="hover:text-white transition-colors"
+                  >
                     Mission & Vision
                   </a>
                 </li>
                 <li>
-                  <a href="#leadership" className="hover:text-white transition-colors">
+                  <a
+                    href="#leadership"
+                    className="hover:text-white transition-colors"
+                  >
                     Leadership
                   </a>
                 </li>
